@@ -2,7 +2,7 @@ package bar;
 
 public class Simplest3 {
 	private Simplest2 s;
-
+	public String toto;
 	public String name;
 
 	private void foo() {
