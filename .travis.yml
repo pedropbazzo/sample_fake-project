@@ -9,7 +9,7 @@ addons:
 
 script: 
 #  - echo $SONARQUBE_SCANNER_PARAMS
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.host.url=https://fab.eu.ngrok.io
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.host.url=https://fab.eu.ngrok.io -Dsonar.projectKey=bellingard_sample_fake-project
 
 install: true
 
