@@ -10,6 +10,7 @@
         <url>https://github.com/bellingard/fake-project-for-tests</url>
         <tag>HEAD</tag>
     </scm>
+<properties><sonar.projectKey>bellingard_sample_fake-project</sonar.projectKey></properties>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
