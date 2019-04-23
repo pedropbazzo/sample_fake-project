@@ -6,10 +6,11 @@ jdk:
 addons:
   sonarcloud:
     organization: bellingard-github
+    token:
+      secure: "MigdDJQBWlRmlXcyRwxwmr4pSOf1UF+KokOsQlAR9mq4mujNQXy5+N/frgOOmGw8m4wCcfZp/c955Es38SnI1w8GKKWCkXHF9ba7SF49D5lcQK4cW1HMCxC0O621iv2rbf6ehwiY8PhBRovia5aaM+Rb1BMvYYdVmPUcJ+0MFeU="
 
 script: 
-#  - echo $SONARQUBE_SCANNER_PARAMS
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true sonar:sonar -Dsonar.host.url=https://fab.eu.ngrok.io -Dsonar.projectKey=bellingard_sample_fake-project
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dmaven.test.failure.ignore=true
 
 install: true
 
