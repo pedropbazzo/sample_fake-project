@@ -12,5 +12,7 @@ public class Simplest3 {
 		Object o = null;
 		name = o.toString();
 		System.out.println("=> " + o);
+		
+		System.out.println("End");
 	}
 }
